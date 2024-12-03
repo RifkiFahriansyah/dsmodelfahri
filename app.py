@@ -60,6 +60,9 @@ def predict_diabetes():
     except Exception as e:
         return jsonify({'error': str(e)}), 400
 
+@app.route('/')
+def home():
+    return 'Aplikasi Diabetes'
 
 # Jalankan aplikasi Flask
 if __name__ == '__main__':
